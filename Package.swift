@@ -33,7 +33,8 @@ let package = Package(
         .testTarget(
             name: "SwiftFastPFORTests",
             dependencies: ["SwiftFastPFOR",
-              .product(name: "iban4j2JavApi", package: "iban4j2JavApi")],                          
+                           .product(name: "JavApi", package: "JavApi4Swift")
+            ],
         resources: [.process("Resources")]
         ),
     ]
